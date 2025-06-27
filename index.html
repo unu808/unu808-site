@@ -4,43 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UNU808</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #ccc;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at center, #0a0a0a 0%, #000 100%);
+      color: #d3d3e7;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #111;
+      background: #0f0f1a;
       padding: 2rem;
       text-align: center;
+      border-bottom: 1px solid #222;
     }
     header img {
-      max-width: 200px;
+      max-width: 180px;
+      filter: drop-shadow(0 0 8px #a782f9);
     }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: #a782f9;
+      margin-top: 1rem;
+    }
+
     nav {
       text-align: center;
       margin: 2rem 0;
     }
     nav a {
+      font-weight: 600;
+      font-size: 1rem;
       margin: 0 1rem;
       text-decoration: none;
-      color: #a782f9;
+      color: #88f4ff;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
     }
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 8px #88f4ff;
+    }
+
     section {
       max-width: 800px;
       margin: auto;
       padding: 2rem;
-      border-bottom: 1px solid #222;
+      border-bottom: 1px solid #1e1e1e;
     }
     h2 {
+      font-family: 'Orbitron', sans-serif;
       color: #a782f9;
+      border-left: 4px solid #a782f9;
+      padding-left: 1rem;
     }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li::before {
+      content: '🎛️ ';
+      margin-right: 0.5rem;
+      color: #88f4ff;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
-      color: #555;
+      font-size: 0.875rem;
+      color: #666;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
