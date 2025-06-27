@@ -10,20 +10,20 @@
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: radial-gradient(circle at top left, #000, #1a001a);
-      color: #cda0ff; /* soft purple */
+      color: #cda0ff;
       line-height: 1.6;
       overflow-x: hidden;
     }
 
     header {
       background: linear-gradient(135deg, #000000 0%, #2e0052 100%);
-      padding: 4rem 2rem 3rem; /* increased padding for bigger logo */
+      padding: 4rem 2rem 3rem;
       text-align: center;
       border-bottom: 1px solid #330066;
       position: relative;
     }
     header img {
-      max-width: 280px; /* bigger logo */
+      max-width: 280px;
       filter: drop-shadow(0 0 25px #b87fff);
       animation: pulse 3s infinite;
     }
@@ -81,71 +81,13 @@
       color: #d8bfff;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.875rem;
-      color: #660099;
-      border-top: 1px solid #330066;
+    /* Gallery grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      padding: 1rem 0 0 0;
     }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="unulogo5.png" alt="UNU808 Logo">
-  </header>
-
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#gear">Gear</a>
-    <a href="#vods">VODs</a>
-    <a href="#gigs">Upcoming Gigs</a>
-    <a href="#booking">Booking</a>
-    <a href="#music">My Music</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>💜 Hey, I'm Unu! I love videogames, DJing, music and production. Originally from Poland, currently living in the UK.</p>
-    <p>💜 Currently, I mainly stream in Phantasy Star Online 2 New Genesis and Final Fantasy XIV , but I'll try to throw in something fresh every now and then.</p>
-    <p>💜 Genres: Mostly open format. I vibe the most with: Bass House, Breaks/Breakbeat, DnB, Neurofunk, UK Garage/ Speed Garage, Metalcore, Prog Rock/Metal</p>
-  </section>
-
-  <section id="gear">
-    <h2>Gear</h2>
-    <ul>
-      <li>Traktor S4 MK3</li>
-      <li>Allen&amp;Heat Xone:K1</li>
-      <li>Novation Launchpad Pro</li>
-      <li>Novation Nocturn</li>
-      <li>Behringer UV1</li>
-      <li>Edifier MR3</li>
-      <li>ATH-M50xSTS</li>
-    </ul>
-  </section>
-
-  <section id="vods">
-    <h2>VODs</h2>
-    <p>Coming soon – you'll be able to browse full DJ sets here.</p>
-  </section>
-
-  <section id="gigs">
-    <h2>Upcoming Gigs</h2>
-    <p>Nothing booked yet – stay tuned!</p>
-  </section>
-
-  <section id="booking">
-    <h2>Booking</h2>
-    <p>For bookings and inquiries, please contact me via Discord: <strong>unu_taiyo</strong></p>
-  </section>
-
-  <section id="music">
-    <h2>My Music</h2>
-    <p>Check back soon for original productions, remixes and more!</p>
-  </section>
-
-  <footer>
-    <p>© 2025 UNU808. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
