@@ -9,28 +9,28 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at top left, #1a1a2e, #000);
-      color: #e0e0f0;
+      background: radial-gradient(circle at top left, #000, #1a001a);
+      color: #cda0ff; /* soft purple */
       line-height: 1.6;
       overflow-x: hidden;
     }
 
     header {
-      background: linear-gradient(135deg, #0f0f1a 0%, #1a0026 100%);
-      padding: 3rem 2rem 2rem;
+      background: linear-gradient(135deg, #000000 0%, #2e0052 100%);
+      padding: 4rem 2rem 3rem; /* increased padding for bigger logo */
       text-align: center;
-      border-bottom: 1px solid #222;
+      border-bottom: 1px solid #330066;
       position: relative;
     }
     header img {
-      max-width: 200px;
-      filter: drop-shadow(0 0 20px #a782f9);
+      max-width: 280px; /* bigger logo */
+      filter: drop-shadow(0 0 25px #b87fff);
       animation: pulse 3s infinite;
     }
 
     @keyframes pulse {
-      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px #a782f9); }
-      50% { transform: scale(1.05); filter: drop-shadow(0 0 35px #dca0ff); }
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 25px #b87fff); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 45px #d8a0ff); }
     }
 
     nav {
@@ -42,28 +42,28 @@
       font-size: 1rem;
       margin: 0 1rem;
       text-decoration: none;
-      color: #88f4ff;
+      color: #cda0ff;
       transition: color 0.3s ease, text-shadow 0.3s ease;
       position: relative;
     }
     nav a:hover {
-      color: #fff;
-      text-shadow: 0 0 12px #88f4ff;
+      color: #e4c6ff;
+      text-shadow: 0 0 12px #e4c6ff;
     }
 
     section {
       max-width: 900px;
       margin: 3rem auto;
       padding: 2rem;
-      border-bottom: 1px solid #1e1e1e;
-      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid #330066;
+      background: rgba(77, 0, 102, 0.15);
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(167, 130, 249, 0.1);
+      box-shadow: 0 0 20px rgba(141, 75, 191, 0.3);
     }
     h2 {
       font-family: 'Orbitron', sans-serif;
-      color: #a782f9;
-      border-left: 4px solid #a782f9;
+      color: #b87fff;
+      border-left: 4px solid #b87fff;
       padding-left: 1rem;
     }
     ul {
@@ -73,19 +73,20 @@
     ul li::before {
       content: '🎛️ ';
       margin-right: 0.5rem;
-      color: #88f4ff;
+      color: #cda0ff;
     }
 
     p {
       font-size: 1.05rem;
+      color: #d8bfff;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.875rem;
-      color: #888;
-      border-top: 1px solid #222;
+      color: #660099;
+      border-top: 1px solid #330066;
     }
   </style>
 </head>
